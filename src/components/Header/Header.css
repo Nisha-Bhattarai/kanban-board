@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--main-color);
+  padding: 1.3rem;
+  color: #fff;
+  border-bottom: 1px solid var(--aqua-color);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+
+.header-title:hover {
+  color: var(--violet-color);
+  letter-spacing: 4px;
+  transform: rotate(3deg);
+}

@@ -1,0 +1,77 @@
+.board-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+.board-column-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  width: 100%;
+  padding-bottom: 20px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+
+.board-column-header {
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.board-column-body {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.board-column-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 125px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px dotted gray;
+}
+
+.board-column-todo {
+  background-color: var(--todo-color);
+}
+
+.board-column-in-progress {
+  background-color: var(--in-progress-color);
+}
+
+.board-column-done {
+  background-color: var(--done-color);
+}
+
+@media screen and (max-width: 768px) {
+  .board-column {
+    align-self: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .board-column:last-child {
+    margin-bottom: 1rem;
+  }
+}

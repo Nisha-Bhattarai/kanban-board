@@ -1,0 +1,7 @@
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  color: var(--text-color);
+  height: 100vh;
+  width: 100vw;
+}
